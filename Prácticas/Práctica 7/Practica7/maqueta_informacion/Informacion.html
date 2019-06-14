@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Información</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../maqueta_index/index.html" class="logo"><strong>Verduzco</strong> <span>Hecho por: Rubén Verduzco López</span></a>
+						<nav>
+							<a href="#menu">Menú</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="../maqueta_index/index.html">Servicios</a></li>
+							<li><a href="../maqueta_productos/Productos.html">Productos</a></li>
+							<li><a href="Informacion.html">Información</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Creación de hilos con parámetros en C#</h1>
+									</header>
+
+									<!-- Content -->
+										<h2 id="content">Introducción</h2>
+										<p>Muchos lenguajes de programación permiten la creación de hilos o Threads en un programa. De forma resumida, los hilos son un mecanismo mediante el cual podemos dividir una aplicación en diferentes partes que se pueden ejecutar de forma paralela, existiendo mecanismos por los que pueden compartir información.</p>
+
+										<p>C# ofrece un mecanismo muy sencillo de implementar hilos, basado en la utilización de la clase Thread. El constructor de esta clase recibe como parámetro el método o función que hay que ejecutar en paralelo. Este parámetro se indica mediante la utilización de un delegado, que es el mecanismo que, entre otras cosas, se utiliza en .NET para utilizar punteros a funciones de forma segura. La firma del delegado no incluye ningún parámetro, por lo que únicamente es posible crear hilos de forma directa sobre métodos y funciones que no requieran parámetros de entrada ni de salida. En los siguientes ejemplos muestro un caso sencillo de creación de un hilo y otro en el que explico una forma de poder crear un hilo con entrada y salida de parámetros.</p>
+
+										<img src="../images/thread2.jpg" alt="" 
+									style="
+									display: block;
+									margin-left: auto;
+									margin-right: auto; " /> <br>
+
+									<p>En el siguiente ejemplo se dispone de una clase con dos métodos que muestran mensajes por pantalla. El objetivo es crear dos hilos, uno para cada uno de los métodos y ejecutarlos de forma paralela, de forma que podamos ver como resultado cómo se van intercalando los mensajes escritos por cada método.</p>
+
+									<img src="../images/info.png" alt="" 
+									style="
+									display: block;
+									margin-left: auto;
+									margin-right: auto; " /> <br>
+
+									<h2 id="content">Conclusiones:</h2>
+									<p>Por supuesto todo lo anterior son únicamente ejemplos muy sencillos, ya que la programación de un sistema multihilo suele ser bastante compleja debido al indeterminismo implícito en la ejecución de múltiples hilos de ejecución, que normalmente comparten recursos o dependen unos de otros. En cualquier caso sí que nos permite apreciar la facilidad con la que se pueden crear estas estructuras en C#, olvidándonos de complejas sintaxis y librerías, y centrándonos únicamente en los requisitos de nuestro sistema.</p>
+
+								</div>
+							</section>
+
+					</div>
+
+				
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Verduzco</li><li>Diseño: <a href="../index.html">Rubén Verduzco López</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
